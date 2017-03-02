@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         
+        
         window?.rootViewController = XKCDrawerViewController.shareDrawerViewController.drawerWithViewController(leftViewController: XKCLeftViewController.init(), mainViewController: XKCMainViewController.init(), DrawerMaxWidth: 300)
+        
+        
         
         return true
     }
